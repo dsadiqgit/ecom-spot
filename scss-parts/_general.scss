@@ -1,0 +1,60 @@
+// Theme colours
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--black);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+article {
+  margin-top: 50px;
+  a {
+    padding-bottom: 50px;
+  }
+}
+
+#content {
+  min-height: 80vh;
+}
+
+// 404 Page
+.error404 {
+  .not-found {
+    min-height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    padding-bottom: 120px;
+    .entry-title {
+      @media screen and (min-width: 768px) {
+        font-size: 200px;
+      }
+    }
+    .home-btn {
+      color: var(--black);
+      background: var(--white);
+      padding: 15px;
+    }
+    .entry-content p {
+      padding-bottom: 25px;
+    }
+  }
+}
+
+// Button
+.home-btn,
+.button-div .button {
+  padding: 15px 20px;
+  margin-top: 50px;
+  border-radius: 30px;
+}

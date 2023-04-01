@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Righteous-Regular;
+  src: url("fonts/Righteous-Regular.ttf");
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Righteous-Regular", cursive;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1;
+  @media screen and (min-width: 768px) {
+    font-size: 120px;
+  }
+}

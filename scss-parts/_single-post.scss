@@ -1,0 +1,13 @@
+.single-post {
+  .single-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    img {
+      width: 60%;
+      max-height: 400px;
+      border-radius: 30px;
+      object-fit: cover;
+    }
+  }
+}
