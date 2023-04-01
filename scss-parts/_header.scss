@@ -2,7 +2,13 @@
   display: flex;
   padding: 10px 0 15px 0;
   background: var(--white);
-
+  position: relative;
+  z-index: 2;
+  .header-logo {
+    width: auto;
+    max-width: 100%;
+    max-height: 50px;
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -13,6 +19,10 @@
       margin-bottom: 0;
       a {
         padding-right: 30px;
+      }
+      ul {
+        display: flex;
+        margin: 0;
       }
     }
     nav {

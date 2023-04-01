@@ -1,6 +1,7 @@
 :root {
   --black: #000000;
   --white: #ffffff;
+  --blue: #0504aa;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 25px;
 }
@@ -55,10 +56,29 @@ article a {
   border-radius: 30px;
 }
 
+.order-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--blue);
+  padding: 7px 20px;
+  border-radius: 20px;
+  color: var(--white);
+  font-family: "Montserrat-Regular", cursive;
+  cursor: pointer;
+  font-size: 14px;
+}
+
 #header {
   display: flex;
   padding: 10px 0 15px 0;
   background: var(--white);
+  position: relative;
+  z-index: 2;
+}
+#header .header-logo {
+  width: auto;
+  max-width: 100%;
+  max-height: 50px;
 }
 #header .container {
   display: flex;
@@ -71,6 +91,10 @@ article a {
 }
 #header .container .menu a {
   padding-right: 30px;
+}
+#header .container .menu ul {
+  display: flex;
+  margin: 0;
 }
 #header .container nav {
   display: flex;
@@ -130,8 +154,12 @@ article a {
 }
 
 @font-face {
-  font-family: Righteous-Regular;
-  src: url("fonts/Righteous-Regular.ttf");
+  font-family: Montserrat-Bold;
+  src: url("fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("fonts/Montserrat-Regular.ttf");
 }
 a {
   text-decoration: none;
@@ -143,7 +171,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Righteous-Regular", cursive;
+  font-family: "Montserrat-Bold", cursive;
 }
 
 h1 {
@@ -152,8 +180,12 @@ h1 {
 }
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 120px;
+    font-size: 20px;
   }
+}
+
+p {
+  font-family: "Montserrat-Regular", cursive;
 }
 
 .blog .container {
@@ -323,6 +355,9 @@ h1 {
     flex-direction: row;
   }
 }
+#half-block .container h2 {
+  padding-bottom: 20px;
+}
 #half-block .container .wpcf7-text {
   height: 50px;
   margin: 10px 0;
@@ -348,39 +383,23 @@ h1 {
   z-index: 1;
 }
 #half-block .container .lottie {
-  -webkit-animation-name: floating;
-          animation-name: floating;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-name: floating;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
 }
 #half-block .container .lottie img {
-  position: absolute;
-  bottom: 50px;
+  position: relative;
+  bottom: 100px;
 }
 @media screen and (min-width: 768px) {
   #half-block .container .lottie img {
-    position: unset;
     min-width: 600px;
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
-  }
-}
-@-webkit-keyframes floating {
-  from {
-    transform: translate(0, 0px);
-  }
-  65% {
-    transform: translate(-20px, 80px);
-  }
-  to {
-    transform: translate(0, 0px);
   }
 }
 @keyframes floating {

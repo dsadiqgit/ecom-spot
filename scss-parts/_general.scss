@@ -2,6 +2,7 @@
 :root {
   --black: #000000;
   --white: #ffffff;
+  --blue: #0504aa;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
   color: var(--black);
 }
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 25px;
 }
@@ -57,4 +58,16 @@ article {
   padding: 15px 20px;
   margin-top: 50px;
   border-radius: 30px;
+}
+
+.order-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--blue);
+  padding: 7px 20px;
+  border-radius: 20px;
+  color: var(--white);
+  font-family: "Montserrat-Regular", cursive;
+  cursor: pointer;
+  font-size: 14px;
 }

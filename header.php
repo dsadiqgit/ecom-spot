@@ -24,7 +24,7 @@
         <div class="container">
             <div class="logo-div">
                 <a href="/#">
-                    <img class="header-logo " src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="Baseline logo" width="120px" height="50px">
+                    <img class="header-logo " src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Ecom Spot logo" width="120px" height="50px">
                 </a>
             </div>
             <nav>
@@ -34,6 +34,9 @@
                     'container_class' => 'main-menu' ) ); 
                 ?>
             </nav>
+            <div class="order-btn">
+                Start your order
+            </div>
         </div>            
     </header>
 

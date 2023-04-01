@@ -1,6 +1,11 @@
 @font-face {
-  font-family: Righteous-Regular;
-  src: url("fonts/Righteous-Regular.ttf");
+  font-family: Montserrat-Bold;
+  src: url("fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("fonts/Montserrat-Regular.ttf");
 }
 
 a {
@@ -13,13 +18,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Righteous-Regular", cursive;
+  font-family: "Montserrat-Bold", cursive;
 }
 
 h1 {
   font-size: 60px;
   line-height: 1;
   @media screen and (min-width: 768px) {
-    font-size: 120px;
+    font-size: 20px;
   }
+}
+
+p {
+  font-family: "Montserrat-Regular", cursive;
 }
