@@ -1,0 +1,73 @@
+#faq {
+  padding: 50px 0;
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    font-family: "cairo", serif;
+  }
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  .container {
+    width: 80%;
+    flex-direction: column;
+    p {
+      width: 100%;
+    }
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .title1,
+  .title2,
+  .title3 {
+    background-color: rgba(5, 4, 170, 0.85);
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  span {
+    position: absolute;
+    right: 15px;
+    font-size: 0.8em;
+  }
+
+  .contentBox1,
+  .contentBox2,
+  .contentBox3 {
+    margin: 0 auto;
+    padding: 0px 30px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+
+  #title1:checked + .contentBox1,
+  #title2:checked + .contentBox2,
+  #title3:checked + .contentBox3 {
+    padding: 20px 30px;
+    height: 160px;
+    border-radius: 0;
+  }
+
+  #title1:checked,
+  #title2:checked,
+  #title3:checked {
+    display: none !important;
+  }
+
+  input {
+    display: none;
+  }
+}

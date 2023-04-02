@@ -34,10 +34,9 @@
                     'container_class' => 'main-menu' ) ); 
                 ?>
             </nav>
-            <div class="order-btn">
+            <a href="/order"><div class="order-btn">
                 Start your order
-            </div>
+            </div></a>
         </div>            
     </header>
-
 <main id="content" role="main">

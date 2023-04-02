@@ -1,14 +1,15 @@
 // OnLoad
 jQuery(document).ready(function ($) {
-  // Homepage hero slider
-  $(".homepage-hero-main-slider").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
+  // Review slider
+  $(".review-slider").slick({
+    infinite: true,
+    // speed: 700,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     dots: true,
-    fade: true,
-    autoplay: true,
-    swipeToSlide: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
   });
 
   // Search Bar Header placeholder text
@@ -24,4 +25,13 @@ jQuery(document).ready(function ($) {
       }
     }
   }
+  $(".action-button").click(function () {
+    setTimeout(function () {
+      if ($(".form span").hasClass("wpcf7-not-valid-tip")) {
+        $(".domain-checker").show();
+      } else {
+        $(".domain-checker").hide();
+      }
+    }, 350);
+  });
 });

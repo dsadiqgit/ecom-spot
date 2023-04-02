@@ -7,7 +7,7 @@
     }
 
     h2 {
-      padding-bottom: 20px;
+      padding: 10px 0 20px 0;
     }
 
     .wpcf7-text {
@@ -38,16 +38,17 @@
     }
 
     .lottie {
-      animation-name: floating;
-      animation-duration: 9s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-      margin-left: 30px;
-      margin-top: 5px;
+      // animation-name: floating;
+      // animation-duration: 9s;
+      // animation-iteration-count: infinite;
+      // animation-timing-function: ease-in-out;
+      // margin-left: 30px;
+      // margin-top: 5px;
 
       img {
         position: relative;
-        bottom: 100px;
+        bottom: 50px;
+        min-width: 600px;
       }
       @media screen and (min-width: 768px) {
         img {
