@@ -7,12 +7,16 @@
             <p>Submit an enquiry through our form and you'll receive a website draft within 5-10 working days.</p>
         </div>
         <div class="form">
-             <div class="domain-checker">
-                <?php echo do_shortcode('[wp24_domaincheck]'); ?>
-            </div>
-            <?php   
-                echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]');
-            ?>
+            <span id="step1">
+                <div class="domain-checker">
+                    <?php echo do_shortcode('[wp24_domaincheck]'); ?>
+                </div>
+            </span>
+            <span id="step2">
+                <?php   
+                    echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]');
+                ?>
+            </span>
         </div>
     </div>
 <?php get_footer(); ?>
