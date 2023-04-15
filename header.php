@@ -35,7 +35,7 @@
                 ?>
             </nav>
             <a href="/order"><div class="order-btn">
-                Start your order
+                Get Started
             </div></a>
         </div>            
     </header>

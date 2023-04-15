@@ -100,6 +100,10 @@ article a {
   width: 100%;
   background-color: var(--blue);
 }
+.page-template-order .table-row {
+  display: flex !important;
+  justify-content: center;
+}
 
 #project {
   background-color: var(--blue);
@@ -404,11 +408,11 @@ a {
 }
 
 #review-slider .review {
-  width: 408px;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding: 0 80px;
 }
 #review-slider .review .review-image {
   height: 130px;

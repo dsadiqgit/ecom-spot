@@ -7,7 +7,7 @@
                 </h2>
             </div>
             <div class="button-div">
-                <a href="/order"><div class="order-btn">Start your order</div></a>
+                <a href="/order"><div class="order-btn">Get Started</div></a>
             </div>
         </div>
         <hr>

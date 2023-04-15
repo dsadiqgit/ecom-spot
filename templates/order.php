@@ -3,7 +3,7 @@
 <?php get_header(); ?>
     <div class="container">
         <div class="text">
-            <h1>Start your order</h1>
+            <h1>Get Started</h1>
             <p>Submit an enquiry through our form and you'll receive a website draft within 5-10 working days.</p>
         </div>
         <div class="form">

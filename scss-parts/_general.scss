@@ -108,6 +108,10 @@ article {
     width: 100%;
     background-color: var(--blue);
   }
+  .table-row {
+    display: flex !important;
+    justify-content: center;
+  }
 }
 
 #project {
